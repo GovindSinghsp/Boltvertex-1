@@ -1,20 +1,10 @@
 import React from 'react';
-import CaseStudiesHero from '../components/casestudies/CaseStudiesHero';
-import FeaturedCases from '../components/casestudies/FeaturedCases';
-import CasesByIndustry from '../components/casestudies/CasesByIndustry';
-import ResultsShowcase from '../components/casestudies/ResultsShowcase';
-import ClientTestimonials from '../components/casestudies/ClientTestimonials';
+import CaseStudiesComponent from '../components/CaseStudies';
 
-const CaseStudies = () => {
+const CaseStudiesPage = () => {
   return (
     <div className="min-h-screen pt-16">
-      <CaseStudiesHero />
-      <FeaturedCases />
-      <CasesByIndustry />
-      <ResultsShowcase />
-      <ClientTestimonials />
+      <CaseStudiesComponent />
     </div>
   );
 };
-
-export default CaseStudies;

@@ -1,12 +1,10 @@
 import React from 'react';
-import Contact from '../components/Contact';
+import ContactComponent from '../components/Contact';
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div className="min-h-screen pt-16">
-      <Contact />
+      <ContactComponent />
     </div>
   );
 };
-
-export default Contact;
