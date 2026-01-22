@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vm-dark: #061E29;
+  --vm-primary: #1D546D;
+  --vm-accent: #5F9598;
+  --vm-soft: #B8CFCE;
+  --vm-bg-light: #EAEFEF;
+  --vm-bg-white: #F3F4F4;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Smooch Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Custom animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Custom utility classes */
+.font-smooch {
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+.font-100 {
+  font-weight: 100;
+}
+
+.font-200 {
+  font-weight: 200;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vm-bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vm-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vm-primary);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
